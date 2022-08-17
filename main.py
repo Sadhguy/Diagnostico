@@ -1,6 +1,7 @@
 import topRetweets
 import topUsers
 import topTweetDays
+import topHashtags
 
 def main():
     inp = input("what do you whant to do?:\n1) Top 10 retweeted tweets\n2) Top 10 users\n3) Top 10 tweet days\n4) Top 10 HashTags\nChoose (1,2,3 or 4):")
@@ -10,5 +11,7 @@ def main():
         topUsers.topUsers()
     elif inp == "3":
         topTweetDays.topTweetDays()
+    elif inp == "4":
+        topHashtags.topHashtags()
 
 main()
